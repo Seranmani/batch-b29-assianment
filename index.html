@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login Form with Logo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLL8T93vMsqXnH4eDyj6DAwdkMFjy4fPqAwQ&s') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .login-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5); 
+        }
+
+        .login-box {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .login-box img {
+            max-width: 100px;
+            margin-bottom: 20px;
+            border-radius: 100%;
+        }
+
+        .login-box h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .login-box input[type="text"],
+        .login-box input[type="password"],
+        .login-box input[type="email"],
+        .login-box select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-box input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .login-box input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #5ea6e9;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .login-box input[type="submit"]:hover {
+            background-color: #66e86c;
+        }
+
+        .login-box .options {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .login-box .options a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .login-box .options a:hover {
+            color: #4CAF50;
+        }
+
+        @media only screen and (max-width: 600px) and (min-width:450px) {
+            .login-box {
+                padding: 40px;
+                width: 100%;
+                background-color: #fa0af6;
+            }
+        }
+        @media only screen and (max-width: 900px) and (min-width:600px) {
+            .login-box {
+                padding: 10px;
+                width: 70%;
+                background-color: rgb(70, 228, 228);
+            }
+        
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            
+            <img src=""=" alt="Logo">
+            <h2>Login</h2>
+            <form action="#">
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                
+                
+                <select required>
+                    <option value="" disabled selected>Select your role</option>
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                </select>
+
+              
+                <div>
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember Me</label>
+                </div>
+
+                <input type="submit" value="Login">
+            </form>
+            
+          
+            <div class="options">
+                <a href="#">Forgot Password?</a>
+                <a href="#">Sign Up</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html
